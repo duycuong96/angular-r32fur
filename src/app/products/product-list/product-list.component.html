@@ -1,0 +1,28 @@
+<div class="p-4">
+  <h2>Danh sách sản phẩm</h2>
+</div>
+<div class="row">
+
+  <div *ngFor="let product of products$ | async"
+  [class.selected]="product.id === selectedId" class="col-lg-4 col-md-6 mb-4">
+    <div class="card h-100">
+      <a [routerLink]="['/product', product.id]"><img class="card-img-top" [src]="product.image" ></a>
+      <div class="card-body">
+        <h2 class="card-title">
+          <a [routerLink]="['/product', product.id]">
+            {{ product.name }}
+          </a>
+        </h2>
+        <br>
+        <h5>{{ product.price }} vnđ</h5>
+        <p class="card-text">{{ product.desc }}</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+

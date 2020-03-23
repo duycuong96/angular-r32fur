@@ -1,0 +1,27 @@
+
+<br>
+<div *ngIf="product$ | async as product">
+  <div class="row">
+    <div class="col-md-6">
+      <a [routerLink]="['/product', product.id]"><img class="card-img-top" [src]="product.image" ></a>
+    </div>
+    <div class="col-md-6">
+      <h2>{{ product.name }}</h2>
+      <h1>{{ product.price }} vnđ</h1>
+      <p>{{product.status ? 'còn hàng' : 'hết hàng'}}</p>
+
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-md-12">
+      <p>
+        {{ product.desc }}
+      </p>
+      <hr>
+      <button (click)="gotoProducts(product)" class="btn btn-primary">Trở lại</button>
+    </div>
+
+  </div>
+  <br>
+</div>

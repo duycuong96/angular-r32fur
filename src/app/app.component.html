@@ -1,0 +1,49 @@
+<!-- <h1>Angular Router</h1>
+<nav>
+  <a routerLink="/" routerLinkActive="active">Home</a>
+  <a routerLink="/products" routerLinkActive="active">Products</a>
+</nav>
+<div>
+  <router-outlet></router-outlet>
+</div> -->
+
+
+<!-- Navigation -->
+<app-menu></app-menu>
+
+
+<!-- Page Content -->
+<div class="container">
+
+  <div class="row">
+
+    <div class="col-lg-3">
+
+      <app-category></app-category>
+
+    </div>
+    <!-- /.col-lg-3 -->
+
+    <div class="col-lg-9">
+      <router-outlet></router-outlet>
+
+
+
+      <!-- /.row -->
+
+    </div>
+    <!-- /.col-lg-9 -->
+
+  </div>
+  <!-- /.row -->
+
+</div>
+<!-- /.container -->
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+  <div class="container">
+    <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+  </div>
+  <!-- /.container -->
+</footer>
