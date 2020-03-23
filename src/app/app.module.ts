@@ -13,7 +13,6 @@ import { MenuComponent } from './menu/menu.component';
 import { SlideComponent } from './slide/slide.component';
 import { CategoryComponent } from './category/category.component';
 import { ContactComponent } from './contact/contact.component';
-import { ManagerProductComponent } from './manager-product/manager-product.component';
 
 
 
@@ -31,7 +30,7 @@ import { ManagerProductComponent } from './manager-product/manager-product.compo
     SlideComponent,
     CategoryComponent,
     ContactComponent,
-    ManagerProductComponent,
+
 
 
   ],
